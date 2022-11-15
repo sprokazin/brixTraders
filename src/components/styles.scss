@@ -1,0 +1,527 @@
+.intro{
+    &--24{
+    font-family: 'Intro';
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    }
+    &--48{
+        font-family: 'Intro';
+        font-weight: 400;
+        font-size: 48px;
+        color: white;
+        margin: 0;
+    }
+    &--42{
+        font-family: 'Intro';
+        font-weight: 400;
+        font-size: 42px;
+        color: white;
+        margin: 0;
+    }
+    &--38{
+        font-family: 'Intro';
+        font-weight: 400;
+        font-size: 38px;
+        color: white;
+        margin: 0;
+    }
+}
+
+.jost{
+    &--48{
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        color: white;
+        margin: 0;
+    }
+    &--40{
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+        margin: 0;
+    }
+
+    &--24-300{
+        font-family: 'Jost300';
+        font-weight: 300;
+        font-size: 24px;
+        color: white;
+        margin: 0;
+    }
+
+    &--24-300-ser{
+        font-family: 'Jost300';
+        font-weight: 300;
+        font-size: 24px;
+        color: white;
+        margin: 0;
+    }
+
+    &--24-400{
+        font-family: 'Jost400';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: white;
+    }
+
+    &--24-400-b{
+        font-family: 'Jost400';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        color: white;
+    }
+
+    &--24-bold{
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        color: white;
+
+    }
+}
+
+
+.menu-logo{
+    display: none;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background: #412394;
+    backdrop-filter: blur(12.5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        margin-left: 200px;
+        height: 70%;
+        width: auto;
+    }
+
+    .signup-btn{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 172px;
+        height: 48px;
+        border: 3px solid #77BEC2;
+        filter: drop-shadow(0px 0px 9px #77BEC2);
+        border-radius: 29px;
+        .signup-logo{
+            width: 30px;
+            height: 30px;
+            margin-right: 15px ;
+        }
+    }
+    .lang-select{
+     display: flex;
+     margin-right: 200px;
+    }
+    .lang-logo{
+        margin-right: 11px;
+    }
+}
+
+
+.wrapStartPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./../images/background.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.startWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.startRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px 0 200px;
+}
+
+.startColumn{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 504px;
+    margin-right: 100px;
+    &--2{
+        height: 450px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        width: 710px;
+        margin-right: 200px;
+    }
+}
+
+.startBtn{
+    width: 187px;
+    height: 58px;
+    border: 3px solid #77BEC2;
+    filter: drop-shadow(0px 0px 9px #77BEC2);
+    border-radius: 29px;
+    font-family: 'Intro';
+    font-size: 36px;
+    background: transparent;
+    color: white;
+    margin-top: 50px;
+}
+
+.logo-user{
+    margin-left: 200px;
+}
+
+.videoplayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1006px;
+    height: 565px;
+    background: #D9D9D9;
+    border-radius: 27px;
+    margin-bottom: 100px;
+
+    .play{
+        display: flex;
+        width: 162px;
+        height: 162px;
+        background: #4A28A9;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        img{
+            margin-left: 8px;
+            max-width: 55px;
+            max-height: 55px;
+            min-width: 55px;
+            min-height: 55px;
+        }
+    }
+}
+
+.serviceWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.serviceList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 200px 0 200px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 493px;
+    height: 259px;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 18px;
+    padding: 30px 69px 30px 69px;
+
+    &--wide{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 493px;
+        height: 259px;
+        border: 2px solid #FFFFFF;
+        border-radius: 24px;
+        margin-bottom: 18px;
+        padding: 30px 10px 30px 10px;
+    }
+}
+
+.effective{
+    margin: 15px 0 30px 0;
+}
+
+.moneyWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 200px 0 200px;
+    text-align: start;
+}
+
+.moneycolumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exchanges{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 100px;
+}
+
+.FTX{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    color: #5AD6F8;
+    margin: 0 7px 0 0;
+}
+.binance{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    color: #F8C04E;
+    margin: 0 7px 0 0;
+}
+.huobi{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    color: #61F89F;
+    margin: 0 7px 0 0;
+}
+.okx{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 69px;
+    color: #AC56F7;
+    margin: 0 7px 0 0;
+}
+.line{
+    width: 284px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.roadmap-wrapper{
+    margin-top: 100px;
+}
+
+.selectors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    border-radius: 22px;
+    margin: 15px 200px 0 200px;
+    cursor: pointer;
+    p{
+        text-align: start;
+    }
+}
+
+.answer{
+    display: none;
+    margin: 15px 200px 0 220px;
+    text-align: start;
+    animation: 0.3s show ease-in-out;
+}
+.unhidden{
+    display: block !important;
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(-10%)
+    }
+    100% {
+        transform: translateY(0)
+    }
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.arrow-logo{
+    width: 30px;
+    height: 45px;
+    cursor: pointer;
+}
+
+
+.contact-wrapper{
+    margin-top: 150px;
+    padding-top: 65px;
+    background-image: url('./../images/background.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contactRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 65px 200px 80px 200px;
+}
+
+.email{
+    margin-top: 40px;
+}
+
+.contact-Form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1007px;
+    input{
+        width: 474px;
+        height: 45px;
+        background: #4A28A9;
+        border-radius: 22px;
+        border: none;
+        margin-bottom: 33px;
+        color: #FFFFFF;
+        padding-left: 20px;
+        font-family: 'Jost300';
+        font-size: 24px;
+    }
+    textarea{
+        width: 1050px;
+        height: 273px;
+        background: #4A28A9;
+        border-radius: 22px;
+        border: none;
+        color: #FFFFFF;
+        padding: 20px 0 0 20px;
+        font-family: 'Jost300';
+        font-size: 24px;
+        resize: none;
+        margin-bottom: 40px;
+    }
+}
+
+.sendBtn{
+    width: 346px;
+    height: 58px;
+    border: 3px solid #77BEC2;
+    filter: drop-shadow(0px 0px 9px #77BEC2);
+    border-radius: 29px;
+    font-family: 'Intro';
+    font-size: 36px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.footer{
+    babackground: #5A36C0;
+    backdrop-filter: blur(12.5px);
+    height: 127px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px 0 200px;
+    align-items: center;
+}
+
+.logoFooter{
+    height: 64px;
+    width: auto;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.exchanges2{
+    display: none;
+}
+
+.w480{
+    display: none;
+}
+
+.bitcoin{
+    animation: mymove 0.1s infinite;
+    -webkit-animation: mymove 0.1s infinite;
+}
+
+.bitDiv{
+    height: 823px;
+}
+
+@-webkit-keyframes mymove {
+    50% {padding-top: 10px;}
+}
+
+@keyframes mymove {
+    50% {padding-top: 10px;}
+}
+
+.roadmap-line{
+    overflow-x: scroll;
+    width: 100%;
+    height: 350px;
+}
+
+.roadmap-line::-webkit-scrollbar {
+    height: 21px;
+    background-color: transparent;
+}
+
+.roadmap-line::-webkit-scrollbar-thumb {
+    background: linear-gradient(120.5deg, #316AB8 -1.33%, #77BEC2 81.47%);
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #f3faf7;
+
+}
+
+.roadmap-line::-webkit-scrollbar-track {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid #FFFFFF;
+    border-radius: 22px;
+    width: 33%;
+}
+
+.roadmap-line::-webkit-scrollbar-thumb:hover {
+    background-color: #253861;
+}
+
+
+.adapt-roadmap{
+    height: 300px;
+}

@@ -1,0 +1,391 @@
+@media screen and (max-width: 1024px) {
+  .intro{
+    &--24{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 18px;
+      color: white;
+    }
+    &--48{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 36px;
+      color: white;
+      margin: 0;
+    }
+    &--42{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 28px;
+      color: white;
+      margin: 0;
+    }
+    &--38{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 21px;
+      color: white;
+      margin: 0;
+    }
+  }
+
+  .jost{
+
+    &--48{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: white;
+      margin: 0;
+    }
+    &--40{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-300{
+      font-family: 'Jost300';
+      font-weight: 300;
+      font-size: 22px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-300-ser{
+      font-family: 'Jost300';
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-400{
+      font-family: 'Jost400';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-bold{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      color: white;
+
+    }
+  }
+
+  .startRow{
+    margin: 0 40px 0 40px;
+  }
+
+  .menu-item{
+   display: none !important;
+  }
+  .menu-logo{
+    display: block;
+  }
+
+  .header{
+    height: 75px;
+  .logo{
+    margin-left: 40px;
+  }
+    .btn-menu{
+      display: flex;
+      justify-content: space-between;
+      width: 180px;
+      margin-right: 40px;
+    }
+  }
+
+
+  .startBtn{
+    margin-top: 40px;
+  }
+
+  .startColumn{
+    width: 37%;
+  }
+  .bitcoin{
+    width: 100%;
+  }
+
+  .wrapStartPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./../images/background.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 115%;
+  }
+
+  .logo-user{
+    width: 450px;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  .startColumn{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 504px;
+    margin-right: 0;
+    margin-left: 40px;
+    &--2{
+      height: 330px;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      width: 423px;
+      margin-right: 40px;
+    }
+  }
+
+  .videoplayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 606px;
+    height: 341px;
+    background: #D9D9D9;
+    border-radius: 27px;
+    margin-bottom: 100px;
+
+    .play{
+      display: flex;
+      width: 98px;
+      height: 98px;
+      background: #4A28A9;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      img{
+        margin-left: 5px;
+        max-width: 42px;
+        max-height: 42px;
+        min-width: 42px;
+        min-height: 42px;
+      }
+    }
+  }
+
+  .effective{
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 293px;
+    height: 200px;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 18px;
+    padding: 20px 0px 20px 0px;
+
+    &--wide{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 293px;
+      height: 200px;
+      border: 2px solid #FFFFFF;
+      border-radius: 24px;
+      margin-bottom: 18px;
+      padding: 20px 0px 20px 0px;
+    }
+  }
+
+  .serviceList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 40px 0 40px;
+  }
+
+  .moneybag{
+    width: 450px;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .moneyWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 40px 0 40px;
+    text-align: start;
+  }
+
+  .FTX{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #5AD6F8;
+    margin: 0 7px 0 0;
+  }
+  .binance{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #F8C04E;
+    margin: 0 7px 0 0;
+  }
+  .huobi{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #61F89F;
+    margin: 0 7px 0 0;
+  }
+  .okx{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #AC56F7;
+    margin: 0 7px 0 0;
+  }
+  .line{
+    width: 213px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    .jost--48{
+      font-size: 36px;
+    }
+  }
+
+  .selectors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px 7px 20px ;
+    border: 1px solid #FFFFFF;
+    border-radius: 22px;
+    margin: 15px 40px 0 40px;
+    cursor: pointer;
+  }
+
+  .answer{
+    display: none;
+    margin: 10px 40px 0 50px;
+    text-align: start;
+    animation: 0.3s show ease-in-out;
+  }
+
+  .contact-Form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 607px;
+    input{
+      width: 274px;
+      height: 45px;
+      background: #4A28A9;
+      border-radius: 22px;
+      border: none;
+      margin-bottom: 15px;
+      color: #FFFFFF;
+      padding-left: 20px;
+      font-family: 'Jost300';
+      font-size: 24px;
+    }
+    textarea{
+      width: 607px;
+      height: 273px;
+      background: #4A28A9;
+      border-radius: 22px;
+      border: none;
+      color: #FFFFFF;
+      padding: 20px 0 0 20px;
+      font-family: 'Jost300';
+      font-size: 24px;
+      resize: none;
+      margin-bottom: 40px;
+    }
+  }
+
+  .sendBtn{
+    width: 280px;
+    height: 50px;
+    border: 3px solid #77BEC2;
+    filter: drop-shadow(0px 0px 9px #77BEC2);
+    border-radius: 29px;
+    font-family: 'Intro';
+    font-size: 28px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+
+  .telegram{
+    width: 89px;
+    height: 89px;
+  }
+
+  .contactRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 65px 40px 30px 40px;
+  }
+
+  .sendBtn{
+    width: 211px;
+    height: 47px;
+    border: 3px solid #77BEC2;
+    filter: drop-shadow(0px 0px 9px #77BEC2);
+    border-radius: 29px;
+    font-family: 'Intro';
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  .footer{
+    babackground: #5A36C0;
+    backdrop-filter: blur(12.5px);
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px 0 40px;
+    align-items: center;
+  }
+
+
+  .bitDiv{
+    height: 570px;
+  }
+}

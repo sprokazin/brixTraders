@@ -28,11 +28,28 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page-wrap{
+  background: #5A36C0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family:'Intro';
+  src: url(./fonts/intro_inline.otf);
+}
+
+@font-face {
+  font-family:'Jost';
+  src: url(./fonts/Jost-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family:'Jost300';
+  src: url(./fonts/Jost-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family:'Jost400';
+  src: url(./fonts/Jost-Light.ttf);
 }

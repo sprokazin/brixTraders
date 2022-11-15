@@ -1,0 +1,332 @@
+@media screen and (max-width: 768px) {
+  .intro{
+    &--24{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 18px;
+      color: white;
+    }
+    &--48{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 36px;
+      color: white;
+      margin: 0;
+    }
+    &--42{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 20px;
+      color: white;
+      margin: 0;
+    }
+    &--38{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 21px;
+      color: white;
+      margin: 0;
+    }
+  }
+
+  .jost{
+
+    &--48{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 22px;
+      color: white;
+      margin: 0;
+    }
+    &--40{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-300{
+      font-family: 'Jost300';
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-300-ser{
+      font-family: 'Jost300';
+      font-weight: 300;
+      font-size: 14px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-400{
+      font-family: 'Jost400';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-bold{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      color: white;
+
+    }
+  }
+
+  .startColumn{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 70%;
+    margin-right: 0;
+    margin-left: 0;
+    &--2{
+      height: 330px;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      width: 423px;
+      margin-right: 40px;
+    }
+  }
+
+  .wrapStartPage{
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./../images/back-768.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .startRow{
+    margin: 0 30px 0 30px;
+  }
+
+  .bitcoin{
+    width: 100%;
+    height: auto;
+  }
+
+  .logo-user{
+    width: 344px;
+    height: auto;
+    margin-left: 40px;
+  }
+
+  .answer{
+    display: none;
+    margin: 10px 40px 0 50px;
+    text-align: start;
+    animation: 0.3s show ease-in-out;
+  }
+
+  .videoplayer{
+    margin: 50px 0 50px 0;
+  }
+
+  .effective{
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 223px;
+    height: 147px;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 18px;
+    padding: 10px 0px 20px 0px;
+
+    &--wide{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 223px;
+      height: 147px;
+      border: 2px solid #FFFFFF;
+      border-radius: 24px;
+      margin-bottom: 18px;
+      padding: 10px 0px 20px 0px;
+    }
+  }
+
+  .moneybag{
+    width: 334px;
+    height: auto;
+  }
+
+  .exchanges{
+    display: none;
+  }
+
+  .exchanges2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .FTX{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 69px;
+    color: #5AD6F8;
+    margin: 0 7px 0 30px;
+  }
+  .binance{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 69px;
+    color: #F8C04E;
+    margin: 0 7px 0 0;
+  }
+  .huobi{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 69px;
+    color: #61F89F;
+    margin: 0 7px 0 0;
+  }
+  .okx{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 69px;
+    color: #AC56F7;
+    margin: 0 7px 0 0;
+  }
+  .line{
+    width: 142px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    .jost--48{
+      font-size: 22px;
+    }
+  }
+  .roadmap-wrapper{
+    margin-top: 40px;
+  }
+
+  .contact-wrapper{
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .telegram{
+    width: 66px;
+    height: 66px;
+  }
+
+  .contactRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 65px 40px 30px 40px;
+  }
+
+  .sendBtn{
+    width: 211px;
+    height: 47px;
+    border: 3px solid #77BEC2;
+    filter: drop-shadow(0px 0px 9px #77BEC2);
+    border-radius: 29px;
+    font-family: 'Intro';
+    font-size: 18px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+
+  .contact-Form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width:  465px;
+    input{
+      width: 200px;
+      height: 29px;
+      background: #4A28A9;
+      border-radius: 22px;
+      border: none;
+      margin-bottom: 15px;
+      color: #FFFFFF;
+      padding-left: 20px;
+      font-family: 'Jost300';
+      font-size: 14px;
+    }
+    textarea{
+      width: 465px;
+      height: 148px;
+      background: #4A28A9;
+      border-radius: 22px;
+      border: none;
+      color: #FFFFFF;
+      padding: 10px 0 0 20px;
+      font-family: 'Jost300';
+      font-size: 14px;
+      resize: none;
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer{
+    babackground: #5A36C0;
+    backdrop-filter: blur(12.5px);
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    align-items: center;
+  }
+
+  .logoFooter{
+    height: 64px;
+    width: auto;
+  }
+
+  .bitDiv{
+    height: 350px;
+    width: 346px;
+  }
+
+  .adapt-roadmap{
+    height: 190px;
+  }
+
+  .roadmap-line{
+    overflow-x: scroll;
+    width: 100%;
+    height: 230px;
+  }
+
+}

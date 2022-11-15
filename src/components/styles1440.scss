@@ -1,0 +1,389 @@
+@media screen and (max-width: 1440px) {
+  .intro{
+    &--24{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 18px;
+      color: white;
+    }
+    &--48{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 48px;
+      color: white;
+      margin: 0;
+    }
+    &--42{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 28px;
+      color: white;
+      margin: 0;
+    }
+    &--38{
+      font-family: 'Intro';
+      font-weight: 400;
+      font-size: 27px;
+      color: white;
+      margin: 0;
+    }
+  }
+
+  .jost{
+
+    &--48{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 44px;
+      color: white;
+      margin: 0;
+    }
+    &--40{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-300{
+      font-family: 'Jost300';
+      font-weight: 300;
+      font-size: 24px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-300-ser{
+      font-family: 'Jost300';
+      font-weight: 300;
+      font-size: 18px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-400{
+      font-family: 'Jost400';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: white;
+      margin: 0;
+    }
+
+    &--24-400-b{
+      font-family: 'Jost400';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: white;
+      margin: 0;
+    }
+
+
+    &--24-bold{
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      color: white;
+
+    }
+  }
+
+  .startWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+
+  .header{
+    width: 100%;
+    height: 80px;
+    background: #412394;
+    backdrop-filter: blur(12.5px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+      margin-left: 200px;
+      height: 70%;
+      width: auto;
+    }
+
+    .signup-btn{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 108px;
+      height: 36px;
+      border: 3px solid #77BEC2;
+      filter: drop-shadow(0px 0px 9px #77BEC2);
+      border-radius: 29px;
+      .signup-logo{
+        width: 15px;
+        height: 21px;
+        margin-right: 15px ;
+      }
+    }
+    .lang-select{
+      display: flex;
+      margin-right: 200px;
+    }
+    .lang-logo{
+      margin-right: 11px;
+      width: 42px;
+      height: 25px;
+    }
+  }
+
+  .bitcoin{
+    width: 614px;
+    height: 607px;
+  }
+
+  .wrapStartPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./../images/background.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 110%;
+  }
+
+  .logo-user{
+    width: 530px;
+    height: 530px;
+  }
+
+  .startColumn{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 504px;
+    margin-right: 0;
+    margin-left: 60px;
+    &--2{
+      height: 330px;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      width: 710px;
+      margin-right: 200px;
+    }
+  }
+
+  .videoplayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 868px;
+    height: 487px;
+    background: #D9D9D9;
+    border-radius: 27px;
+    margin-bottom: 100px;
+
+    .play{
+      display: flex;
+      width: 140px;
+      height: 140px;
+      background: #4A28A9;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      img{
+        margin-left: 8px;
+        max-width: 55px;
+        max-height: 55px;
+        min-width: 55px;
+        min-height: 55px;
+      }
+    }
+  }
+
+  .effective{
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+
+  .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 333px;
+    height: 200px;
+    border: 2px solid #FFFFFF;
+    border-radius: 24px;
+    margin-bottom: 18px;
+    padding: 30px 69px 30px 69px;
+    .intro--42{
+      margin-bottom: 10px;
+    }
+    &--wide{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 333px;
+      height: 200px;
+      border: 2px solid #FFFFFF;
+      border-radius: 24px;
+      margin-bottom: 18px;
+      padding: 30px 10px 30px 10px;
+    }
+  }
+
+
+  .moneybag{
+    width: 484px;
+    height: 467px;
+    margin-bottom: 200px;
+  }
+
+
+  .exchanges{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 50px;
+  }
+
+  .FTX{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #5AD6F8;
+    margin: 0 7px 0 0;
+  }
+  .binance{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #F8C04E;
+    margin: 0 7px 0 0;
+  }
+  .huobi{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #61F89F;
+    margin: 0 7px 0 0;
+  }
+  .okx{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 69px;
+    color: #AC56F7;
+    margin: 0 7px 0 0;
+  }
+  .line{
+    width: 213px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+    .jost--48{
+      font-size: 36px;
+    }
+  }
+
+
+  .selectors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 10px 20px ;
+    border: 1px solid #FFFFFF;
+    border-radius: 22px;
+    margin: 15px 200px 0 200px;
+    cursor: pointer;
+  }
+
+  .answer{
+    display: none;
+    margin: 15px 200px 0 220px;
+    text-align: start;
+    animation: 0.3s show ease-in-out;
+  }
+
+  .telegram{
+    width: 113px;
+    height: 113px;
+  }
+
+
+  .contact-Form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 687px;
+    input{
+      width: 314px;
+      height: 45px;
+      background: #4A28A9;
+      border-radius: 22px;
+      border: none;
+      margin-bottom: 15px;
+      color: #FFFFFF;
+      padding-left: 20px;
+      font-family: 'Jost300';
+      font-size: 24px;
+    }
+    textarea{
+      width: 687px;
+      height: 273px;
+      background: #4A28A9;
+      border-radius: 22px;
+      border: none;
+      color: #FFFFFF;
+      padding: 20px 0 0 20px;
+      font-family: 'Jost300';
+      font-size: 24px;
+      resize: none;
+      margin-bottom: 40px;
+    }
+  }
+
+  .sendBtn{
+    width: 280px;
+    height: 50px;
+    border: 3px solid #77BEC2;
+    filter: drop-shadow(0px 0px 9px #77BEC2);
+    border-radius: 29px;
+    font-family: 'Intro';
+    font-size: 28px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+  }
+
+  .bitDiv{
+    height: 620px;
+  }
+
+}
