@@ -1,6 +1,5 @@
 import React from 'react';
-import rodamap_1920 from './../images/roadmap-1920.svg'
-import roadmap_line from './../images/roadmap-lime.svg'
+import rodamap_1920 from './../images/roadmap-1920.webp'
 import './styles.scss'
 import './styles1440.scss'
 import './styles1024.scss'

@@ -38,7 +38,7 @@ function App() {
     <div className="App">
         <div className='page-wrap'>
         <Header sccrollTo={sccrollTo}/>
-        <Start id='1' sccrollTo={sccrollTo}/>
+        <Start sccrollTo={sccrollTo}/>
         <Service/>
         <Roadmap/>
         <Faq/>

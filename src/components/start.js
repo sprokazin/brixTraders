@@ -9,7 +9,7 @@ import './styles1024.scss'
 import './styles768.scss'
 import './styles480.scss'
 import './styles320.scss'
-const Start = () => {
+const Start = (props) => {
     return (
         <div className='wrapStartPage'>
             <div className='startWrapper'>
@@ -22,7 +22,7 @@ const Start = () => {
                         </div>
                         <p className='jost--24-300'>An effective tool for the development of exchange crypto trading
                             with automated programs.</p>
-                        <button className='startBtn'>start</button>
+                        <button className='startBtn cursor-pointer' id='about' onClick={props.sccrollTo}>start</button>
                     </div>
                     <div className='bitDiv w480-'><img src={bitcoin} alt="logo" className='bitcoin w480-'/></div>
                 </div>
@@ -35,11 +35,11 @@ const Start = () => {
                         trading and arbitrage programs allowing you to delegate traders' tasks for the most profitable
                         trades</p>
                     <img src={user} alt="" className='logo-user w480'/>
-                    <p className='jost--24-400'>Efficient management of trading bots with the help of experienced
+                    <p className='jost--24-400'><b>Efficient management</b> of trading bots with the help of experienced
                         traders.</p>
-                    <p className='jost--24-400'>Multitasking arbitrage bots allowing you to effectively collaborate with
+                    <p className='jost--24-400'><b>Multitasking arbitrage bots</b> allowing you to effectively collaborate with
                         dozens of exchanges simultaneously</p>
-                    <p className='jost--24-400'>Continuous analysis of market data for integrated solutions with modular
+                    <p className='jost--24-400'><b>Continuous analysis</b> of market data for integrated solutions with modular
                         systems and optimization.</p>
                 </div>
             </div>

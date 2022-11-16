@@ -388,4 +388,15 @@
   .bitDiv{
     height: 570px;
   }
+
+  .lang-select{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+  }
+
+  .menu-item-lng{
+    display: none !important;
+  }
 }

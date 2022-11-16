@@ -476,7 +476,7 @@
 
 .bitcoin{
     animation: mymove 0.1s infinite;
-    -webkit-animation: mymove 0.1s infinite;
+    -webkit-animation: mymove 3s infinite;
 }
 
 .bitDiv{
@@ -524,4 +524,12 @@
 
 .adapt-roadmap{
     height: 300px;
+}
+
+.menu-1024 {
+    display: none;
+}
+
+.menu-item-lng{
+    display: none !important;
 }

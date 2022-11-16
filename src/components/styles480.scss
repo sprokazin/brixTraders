@@ -116,6 +116,10 @@
   .w480{
     display: block;
   }
+  .lang-select{
+    margin-right: 0 !important;
+    margin-left: auto;
+  }
 
   .startColumn{
     align-items: center;
@@ -393,4 +397,15 @@
     height: 160px;
   }
 
+  .menu-item-lng{
+    display: flex !important;
+  }
+
+  .header{
+  .lang-logo{
+    width: 38px;
+    height: 23px;
+    margin-right: 6px;
+  }
+  }
 }
