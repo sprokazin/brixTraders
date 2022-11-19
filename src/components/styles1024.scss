@@ -1,28 +1,32 @@
 @media screen and (max-width: 1024px) {
   .intro{
     &--24{
-      font-family: 'Intro';
-      font-weight: 400;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 800;
       font-size: 18px;
       color: white;
     }
     &--48{
-      font-family: 'Intro';
-      font-weight: 400;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 800;
       font-size: 36px;
       color: white;
       margin: 0;
     }
     &--42{
-      font-family: 'Intro';
-      font-weight: 400;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 800;
       font-size: 28px;
       color: white;
       margin: 0;
     }
     &--38{
-      font-family: 'Intro';
-      font-weight: 400;
+      font-family: 'Jost';
+      font-style: normal;
+      font-weight: 800;
       font-size: 21px;
       color: white;
       margin: 0;
@@ -193,7 +197,7 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 293px;
-    height: 200px;
+    min-height: 200px;
     border: 2px solid #FFFFFF;
     border-radius: 24px;
     margin-bottom: 18px;
@@ -206,7 +210,7 @@
       flex-direction: column;
       box-sizing: border-box;
       width: 293px;
-      height: 200px;
+      min-height: 200px;
       border: 2px solid #FFFFFF;
       border-radius: 24px;
       margin-bottom: 18px;
@@ -338,12 +342,14 @@
   }
 
   .sendBtn{
-    width: 280px;
+    min-width: 280px;
+    max-width: 50%;
     height: 50px;
     border: 3px solid #77BEC2;
     filter: drop-shadow(0px 0px 9px #77BEC2);
     border-radius: 29px;
-    font-family: 'Intro';
+    font-family: 'Jost';
+    font-weight: 900;
     font-size: 28px;
     background: transparent;
     color: white;
@@ -363,12 +369,14 @@
   }
 
   .sendBtn{
-    width: 211px;
+    min-width: 211px;
+    max-width: 50%;
     height: 47px;
     border: 3px solid #77BEC2;
     filter: drop-shadow(0px 0px 9px #77BEC2);
     border-radius: 29px;
-    font-family: 'Intro';
+    font-family: 'Jost';
+    font-weight: 900;
     font-size: 18px;
     background: transparent;
     color: white;

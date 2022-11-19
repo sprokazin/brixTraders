@@ -35,42 +35,42 @@ import i18next, {use} from 'i18next'
 const Header = (props) => {
     const languages = [
         {
-            code: 'EN',
+            code: 'en',
             name: 'English',
             image: EN
         },
+       {
+           code: 'tr',
+           name: 'Türk',
+           image: TR
+            },
+       {
+           code: 'id',
+           name: 'Indonesia',
+           image: ID
+       },
         {
-            code: 'TR',
-            name: 'Türk',
-            image: TR
-        },
-        {
-            code: 'ID',
-            name: 'Indonesia',
-            image: ID
-        },
-        {
-            code: 'TH',
+            code: 'th',
             name: 'ไทย',
             image: TH
         },
         {
-            code: 'ES',
+            code: 'es',
             name: 'Espanol',
             image: ES
         },
+      {
+          code: 'fr',
+          name: 'Le français',
+          image: FR
+      },
         {
-            code: 'FR',
-            name: 'Le français',
-            image: FR
-        },
-        {
-            code: 'IT',
+            code: 'it',
             name: 'Italiano',
             image: IT
         },
         {
-            code: 'DE',
+            code: 'de',
             name: 'Deutsche',
             image: DE
         },
@@ -80,25 +80,25 @@ const Header = (props) => {
             image: zh_CN
         },
         {
-            code: 'JA',
+            code: 'ja',
             name: '日本語',
             image: JA
         },
-        {
-            code: 'RU',
+            {
+            code: 'ru',
             name: 'Русский',
             image: RU
-        },
-        {
-            code: 'PL',
-            name: 'Polski',
-            image: PL
-        },
-        {
-            code: 'SL',
-            name: 'Slovenský',
-            image: SL
-        },
+            },
+       {
+           code: 'pl',
+           name: 'Polski',
+           image: PL
+              },
+       {
+           code: 'sl',
+           name: 'Slovenský',
+           image: SL
+       },
     ]
 
     const { t } = useTranslation();
@@ -107,8 +107,9 @@ const Header = (props) => {
     const [isMenuOpen1, setIsMenuOpen1] = useState('')
     const [isMenuOpen2, setIsMenuOpen2] = useState('')
     const [isMenuOpen3, setIsMenuOpen3] = useState('')
+    const [refcounter, setRefCounter] = useState('')
     const [isLngOpen, setIsLngOpen] = useState(false)
-    const currentLanguageCode = (cookies.get('i18next') || 'EN').toUpperCase()
+    const currentLanguageCode = cookies.get('i18next') || 'en'
 
     function menuHandler(){
         if(isMenuOpen === ''){
@@ -134,13 +135,38 @@ const Header = (props) => {
         }
     })
 
+    const date = new Date;
+    const date1 = date.getUTCDate();
+
+    useEffect(() => {
+        if((date1 % 12) >= 0 && (date1 % 12) < 3){
+            setRefCounter('https://brixtraders.io/signup?ref=vt0kmi66mq')
+        }
+        if((date1 % 12) >= 3 && (date1 % 12) < 6){
+            setRefCounter('https://brixtraders.io/signup?ref=g4w72c7l15')
+        }
+        if((date1 % 12) >= 6 && (date1 % 12) < 9){
+            setRefCounter('https://brixtraders.io/signup?ref=yykb72gri5')
+        }
+        if((date1 % 12) >= 9 && (date1 % 12) < 12){
+            setRefCounter('https://brixtraders.io/signup?ref=t1v98i3066')
+        }
+    },[]);
+
+    useEffect(() => {
+            if(isLngOpen){
+                setTimeout(function run() {
+                    document.addEventListener('click', () => {
+                        setIsLngOpen(false)
+                    })
+                }, 1);
+            }
+    },[isLngOpen]);
+
     function openLng(){
-        if(isLngOpen === false){
-            setIsLngOpen(true)
-        }
-        else {
-            setIsLngOpen(false)
-        }
+        setTimeout(function run() {
+            setIsLngOpen(!isLngOpen)
+        }, 1);
     }
     const rootEl = useRef(null);
     const rootEl1 = useRef(null);
@@ -163,47 +189,47 @@ const Header = (props) => {
         <>
         <div className={'header ' + (isMenuOpen)}>
             <img src={logo} alt="logo" className='logo' />
-            <p className='intro--24 menu-item cursor-pointer' id='about' onClick={props.sccrollTo}>ABOUT</p>
-            <p className='intro--24 menu-item cursor-pointer' id='services' onClick={props.sccrollTo}>services</p>
-            <p className='intro--24 menu-item cursor-pointer' id='roadmap' onClick={props.sccrollTo}>roadmap</p>
-            <p className='intro--24 menu-item cursor-pointer' id='faq' onClick={props.sccrollTo}>F.A.Q.</p>
-            <p className='intro--24 menu-item cursor-pointer' id='contact' onClick={props.sccrollTo}>COntact</p>
+            <p className='intro--24 menu-item cursor-pointer' id='about' onClick={props.sccrollTo}>{t('about').toUpperCase()}</p>
+            <p className='intro--24 menu-item cursor-pointer' id='services' onClick={props.sccrollTo}>{t('services').toUpperCase()}</p>
+            <p className='intro--24 menu-item cursor-pointer' id='roadmap' onClick={props.sccrollTo}>{t('roadmap').toUpperCase()}</p>
+            <p className='intro--24 menu-item cursor-pointer' id='faq' onClick={props.sccrollTo}>{t('F.A.Q.').toUpperCase()}</p>
+            <p className='intro--24 menu-item cursor-pointer' id='contact' onClick={props.sccrollTo}>{t('contact').toUpperCase()}</p>
                 <div className='lang-select menu-item-lng cursor-pointer' onClick={openLng}>
                     {imgLang}
-                    <p className='jost--24-400'>{currentLanguageCode}</p>
+                    <p className='jost--24-400'>{currentLanguageCode.toUpperCase()}</p>
                 </div>
             <div className='btn-menu'>
-            <div className='signup-btn'><img src={signup} className='signup-logo'/> <p className='jost--24-400-b'>Sign Up</p> </div>
+            <a href={refcounter} className='text-decoration'><div className='signup-btn'><img src={signup} className='signup-logo'/> <p className='jost--24-400-b'>{t('Sign Up')}</p> </div></a>
             <img src={isMenuOpen==='' ? menu : closeBtn} alt="" className='menu-logo' onClick={menuHandler}/>
             </div>
             <div className='lang-select menu-item cursor-pointer' onClick={openLng}>
                 {imgLang}
-                <p className='jost--24-400'>{currentLanguageCode}</p>
+                <p className='jost--24-400'>{currentLanguageCode.toUpperCase()}</p>
             </div>
         </div>
             <div className={isMenuOpen2}></div>
             <div className={isMenuOpen1} onClick={menuHandler}>
-                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='about' onClick={props.sccrollTo}>ABOUT</p>
+                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='about' onClick={props.sccrollTo}>{t('about').toUpperCase()}</p>
                 <div className={'hr-menu ' + isMenuOpen3} ></div>
-                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='services' onClick={props.sccrollTo}>SERVICES</p>
+                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='services' onClick={props.sccrollTo}>{t('services').toUpperCase()}</p>
                 <div className={'hr-menu ' + isMenuOpen3}></div>
-                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='roadmap' onClick={props.sccrollTo}>ROADMAP</p>
+                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='roadmap' onClick={props.sccrollTo}>{t('roadmap').toUpperCase()}</p>
                 <div className={'hr-menu ' + isMenuOpen3}></div>
-                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='faq' onClick={props.sccrollTo}>F.A.q.</p>
+                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='faq' onClick={props.sccrollTo}>{t('F.A.Q.').toUpperCase()}</p>
                 <div className={'hr-menu ' + isMenuOpen3}></div>
-                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='contact' onClick={props.sccrollTo}>Contact</p>
+                <p className={'menu-p cursor-pointer ' + isMenuOpen3} id='contact' onClick={props.sccrollTo}>{t('contact').toUpperCase()}</p>
                 <div className={'hr-menu ' + isMenuOpen3}></div>
             </div>
             { isMenuOpen !== '' &&
             <div className='menu-1024'>
-                <p>About</p>
-                <p>services</p>
-                <p>roadmap</p>
-                <p>F.A.Q.</p>
-                <p>COntact</p>
+                <p>{t('about').toUpperCase()}</p>
+                <p>{t('services').toUpperCase()}</p>
+                <p>{t('roadmap').toUpperCase()}</p>
+                <p>{t('F.A.Q.').toUpperCase()}</p>
+                <p>{t('contact').toUpperCase()}</p>
                 <div className='lang-select cursor-pointer' onClick={openLng}>
                     {imgLang}
-                    <h className='jost--24-400'>{currentLanguageCode}</h>
+                    <h className='jost--24-400'>{currentLanguageCode.toUpperCase()}</h>
                 </div>
             </div>
             }

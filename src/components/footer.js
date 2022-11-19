@@ -6,7 +6,10 @@ import './styles1024.scss'
 import './styles768.scss'
 import './styles480.scss'
 import './styles320.scss'
+import {useTranslation} from "react-i18next";
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <div className='footer'>
             <img src={footerlogo} alt="" className='logoFooter'/>

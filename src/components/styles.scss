@@ -1,27 +1,31 @@
 .intro{
     &--24{
-    font-family: 'Intro';
-    font-weight: 400;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 800;
     font-size: 24px;
     color: white;
     }
     &--48{
-        font-family: 'Intro';
-        font-weight: 400;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 800;
         font-size: 48px;
         color: white;
         margin: 0;
     }
     &--42{
-        font-family: 'Intro';
-        font-weight: 400;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 800;
         font-size: 42px;
         color: white;
         margin: 0;
     }
     &--38{
-        font-family: 'Intro';
-        font-weight: 400;
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 800;
         font-size: 38px;
         color: white;
         margin: 0;
@@ -113,11 +117,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 172px;
+        min-width: 172px;
         height: 48px;
         border: 3px solid #77BEC2;
         filter: drop-shadow(0px 0px 9px #77BEC2);
         border-radius: 29px;
+        padding: 0 3px 0 3px;
         .signup-logo{
             width: 30px;
             height: 30px;
@@ -163,7 +168,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
-    width: 504px;
+    width: 505px;
     margin-right: 100px;
     &--2{
         height: 450px;
@@ -177,12 +182,14 @@
 }
 
 .startBtn{
-    width: 187px;
+    min-width: 187px;
+    max-width: 50%;
     height: 58px;
     border: 3px solid #77BEC2;
     filter: drop-shadow(0px 0px 9px #77BEC2);
     border-radius: 29px;
-    font-family: 'Intro';
+    font-family: 'Jost';
+    font-weight: 900;
     font-size: 36px;
     background: transparent;
     color: white;
@@ -198,8 +205,7 @@
     justify-content: center;
     align-items: center;
     width: 1006px;
-    height: 565px;
-    background: #D9D9D9;
+    height: auto !important;
     border-radius: 27px;
     margin-bottom: 100px;
 
@@ -242,7 +248,7 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 493px;
-    height: 259px;
+    min-height: 259px;
     border: 2px solid #FFFFFF;
     border-radius: 24px;
     margin-bottom: 18px;
@@ -255,7 +261,7 @@
         flex-direction: column;
         box-sizing: border-box;
         width: 493px;
-        height: 259px;
+        min-height: 259px;
         border: 2px solid #FFFFFF;
         border-radius: 24px;
         margin-bottom: 18px;
@@ -435,12 +441,14 @@
 }
 
 .sendBtn{
-    width: 346px;
+    min-width: 346px;
+    max-width: 50%;
     height: 58px;
     border: 3px solid #77BEC2;
     filter: drop-shadow(0px 0px 9px #77BEC2);
     border-radius: 29px;
-    font-family: 'Intro';
+    font-family: 'Jost';
+    font-weight: 900;
     font-size: 36px;
     background: transparent;
     color: white;
@@ -532,4 +540,51 @@
 
 .menu-item-lng{
     display: none !important;
+}
+
+.telegram{
+    display: none;
+}
+
+.text-decoration{
+    text-decoration: none;
+}
+
+.page-wrap{
+    background: #5A36C0;
+}
+
+
+.preloader-center{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.preloader{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 100px;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid rgba(255,255,255,.1);
+    border-top: 10px solid #FFFFFF;
+    animation: animate 2s infinite linear;
+}
+
+@keyframes animate {
+    0%{
+        transform: translate(-20%,50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-20%,50%) rotate(360deg);
+    }
+    
 }
